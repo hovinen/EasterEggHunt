@@ -4,8 +4,8 @@ import java.util.Optional;
 
 public interface AccountRepository {
 
-	void persist(Account account);
+    void persist(Account account);
 
-	Optional<Account> lookup(AccountNumber accountNumber);
+    Optional<Account> lookup(AccountNumber accountNumber);
 
 }

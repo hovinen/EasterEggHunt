@@ -4,8 +4,8 @@ import java.util.List;
 
 public interface TransactionRepository {
 
-	void persist(Transaction transaction);
+    void persist(Transaction transaction);
 
-	List<Transaction> lookupTransactions(AccountNumber accountNumber);
+    List<Transaction> lookupTransactions(AccountNumber accountNumber);
 
 }

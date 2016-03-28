@@ -2,6 +2,6 @@ package bank;
 
 public interface HttpService {
 
-	int doPost(String url, String body);
+    int doPost(String url, String body);
 
 }
