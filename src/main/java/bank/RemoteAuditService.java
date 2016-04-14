@@ -45,7 +45,7 @@ public final class RemoteAuditService implements AuditService {
         private TransactionDto(Transaction transaction) {
             accountNumber = transaction.getAccountNumber().toString();
             transactionDate = transaction.getTransactionDate()
-                    .format(new DateTimeFormatterBuilder().appendPattern("d-M-Y").toFormatter());
+                    .format(new DateTimeFormatterBuilder().appendPattern("d-M-y").toFormatter());
             amount = transaction.getAmount().format(5);
             currencyCode = transaction.getAmount().getCurrency().toString();
         }
